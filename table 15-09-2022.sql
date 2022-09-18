@@ -72,5 +72,4 @@ insert into xworkzodc.airport values('davangere airport ','international airport
 insert into xworkzodc.airport values('telengana airport ','international airport','India','telengana','Hubli',4500,450000,100,10,15,100,40,50,150,20,
 6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
 
-
 	 

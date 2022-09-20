@@ -1,75 +1,53 @@
-create database xworkzodc;
-create table xworkzodc.airport(name varchar(50) ,type varchar(50) ,country varchar(50) ,state varchar(50) ,city varchar(50) ,ticketPrice double ,
-avgCollectionPerYear double ,noOfseats int ,noOfWorkers int ,noOfAc int ,noOfchairs int ,noOfTables int ,noOfFans int ,noOfLights int ,noOfBells int ,
-openTime double ,closeTime double ,priceOfChairs double ,priceOfTables double ,priceOfFans double ,priceOfLights double ,noOfRooms double ,
-noOfBathRooms double ,noOfMainDoors int ,noOfGates int ,noOfDoors int ,typeOfDoors varchar(50) ,typeOfGates varchar(50) ,priceOfDoor double ,priceOfGates double ,
-priceOfWindow double ,widthOfMainDoor double ,heightOfMainDoor double ,gentsToilet int ,ladiesToilet int ,widthOfDoor double ,heightOfDoor double ,
-widthOfGate double ,heightOfGate double ,securities int);
-select * from xworkzodc.airport;
-insert into xworkzodc.airport values('Siddharoda airport hubli','international airport','India','Karnataka','Hubli',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
+create database airport;
+create table airport.airport(id int,name varchar(20),location varchar(20), color varchar(20),ownername varchar(20),type varchar(20),
+nooffloor double, noofroom double, noofroomrinfristfloor double,noofroomrinsecondfloor double,noofroomrinthirdfloor double,noofroomrinfourthfloor
+double,noofroomrinfifthfloor double,noofroomrinsixthfloor double, noofroomrinseventhfloor double,ticketprice double, avgcollection double,
+avgcollectionperday double, avgcollectionperweek double,avgcollectionpermonth double,avgcollectionperyear double,noofchairs double,
+nooftables double, colorofchair varchar(20),coloroftable varchar(20),nooflights double, typeoflight varchar(20), noofcounter double,
+noofdoor double, noofwindow double, typeofdoor varchar(20) ,typeofwindow varchar(20), colorofdoor varchar(20), colorwindow varchar(20),
+nooflight double, colorofflight varchar(20), noofgate double, widthofgate varchar(20), source varchar(20), destination varchar(20));
+Select * from airport.airport;
+desc airport.airport;
+insert into airport.airport values(1,'HAL','Bengaluru','white','K Gowda','International',7,50,8,10,11,12,
+15,18,20,2000,10000000,30000,500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed',
+'moveable','Black','Green',20,'bule',5,'10m','Bengalur',
+'USA');
+insert into airport.airport values(2,'Hubli','Hubli','white','Sudha','International',7,50,8,10,11,12,15,18,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','Bengalur','USA');
+insert into airport.airport values(3,'PuneAirport','Pune','white','Hemant','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','Pune','USA');
+insert into airport.airport values(4,'Airport','Pune','white','Hemant','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','Pune','USA');
+insert into airport.airport values(5,'MumbaiAirport','Mumbai','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','Mimbai','USA');
+insert into airport.airport values(6,'ChennaiAirport','Chennai','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','Chennai','USA');
+insert into airport.airport values(7,'RajastanAirport','Rajastan','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','Rajastan','USA');
+insert into airport.airport values(8,'BenagalurAirport','Benaglur','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','Benagalur','USA');
+insert into airport.airport values(9,'ManagalorerAirport','Maganlur','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','mangalur','USA');
+insert into airport.airport values(10,'KeralaAirport','Kerala','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','Kerala','USA');
+insert into airport.airport values(11,'GajaratAirport','Gujarat','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','Gujarat','USA');
+insert into airport.airport values(12,'LucknowAirport','Lucknow','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','Luckonow','USA');
+insert into airport.airport values(13,'PunjabAirport','Punjab','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','Punjab','USA');
+insert into airport.airport values(14,'HyderbadaAirport','Hyderbada','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','Heyderbad','USA');
+insert into airport.airport values(15,'JammukasmirAirport','JammuKasmir','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','JammuKasmir','USA');
+insert into airport.airport values(16,'MPAirPort','Mp','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','MP','USA');
+insert into airport.airport values(17,'UPAirPort','UP','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','PP','USA');
+insert into airport.airport values(18,'Badami','Badami','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','Badami','USA');
+insert into airport.airport values(19,'Bagalkot','Baglkot','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','Bagalkot','USA');
+insert into airport.airport values(20,'VijayPur','VijayPur','white','Mukesh','International',7,50,8,10,11,12,15,25,20,2000,10000000,30000,
+500000,600000,7000000,200, 100,'white','Grey',100,'tubelight',5, 50,40,'Fixed','moveable','Black','Green',20,'bule',5,'10m','vijayPur','USA');
 
-insert into xworkzodc.airport values('Mumbai airport ','international airport','India','Karnataka','Mumbai',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('bangalore airport ','international airport','India','Karnataka','bangalore',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('mangalore airport ','international airport','India','Karnataka','mangalore',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('belgaum airport ','international airport','India','Karnataka','belgaum',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('ranchi airport ','international airport','India','Karnataka','ranchi',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('delhi airport ','international airport','India','Karnataka','delhi',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('hyderabad airport ','international airport','India','Karnataka','hyderabad',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('chennai airport ','international airport','India','Karnataka','chennai',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('kochi airport ','international airport','India','Karnataka','kochi',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('kolkata airport ','international airport','India','Karnataka','kolkata',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('ahmedabad airport ','international airport','India','Karnataka','ahmedabad',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('lucknow airport ','international airport','India','Karnataka','lucknow',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('goa airport ','international airport','India','Karnataka','goa',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('jaipur airport ','international airport','India','Karnataka','jaipur',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('chattisgarh airport ','international airport','India','Karnataka','chattisgarh',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('HAL airport ','international airport','India','Karnataka','bangalore',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('haryana airport ','international airport','India','Madyapradesh','haryana',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('indian airport ','international airport','India','Karnataka','Hubli',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('mysore airport ','international airport','India','Karnataka','mysore',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('davangere airport ','international airport','India','Karnataka','davangere',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-insert into xworkzodc.airport values('telengana airport ','international airport','India','telengana','Hubli',4500,450000,100,10,15,100,40,50,150,20,
-6.00,11.00,800,5000,4500,1200,30,8,2,2,10,'wood','Steel',15000,25000,6000,5,7,5,5,3,7,8,8,10);
-
-	 

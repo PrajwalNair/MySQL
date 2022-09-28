@@ -61,3 +61,12 @@ Select  name from bank where name Like 'S%';
 Select  name from bank where name Like '%C%';
 Select  name from bank where name Like '%B%';
 Select  name from bank where name Like '&S%';
+
+distinct:
+select distinct(name) from bank;
+create table bank1 as select * from bank;
+select * from bank1;
+aggregate fuctions:
+count,sum,max,min,avg
+select count (*) as noOfRows from bank1;
+
